@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #faf0e6;
+}
+.recipe-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    color: #333;
+}
+.preparation-time {
+    background-color: #fef5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.nutrition-table td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
