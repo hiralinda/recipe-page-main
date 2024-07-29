@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
 body {
     font-family: outfit;
     max-width: 800px;
@@ -10,18 +18,27 @@ body {
     background-color: hsl(30, 54%, 90%);
     font-size: 16px;
     line-height: 2.0;
+    color: hsl(30, 10%, 34%);
 }
+
 .recipe-card {
     background-color: hsl(0, 0%, 100%);
     padding: 50px;
     border-radius: 10px;
 }
+
+img {
+    width: 100%; 
+    border-radius: 10px;
+}
+
 h1 {
     color: hsl(24, 5%, 18%);
     font-family: young serif;
     margin-bottom: 0px;
     font-size: 42px;
 }
+
 h2 {
     color: hsl(14, 45%, 36%);
     font-family: young serif;
@@ -45,10 +62,12 @@ li::marker {
     padding: 15px;
     border-radius: 10px;
 }
+
 .nutrition-table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .nutrition-table td {
     padding-left: 30px;
     padding-top: 10px;
@@ -59,8 +78,28 @@ li::marker {
 .attribution {
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    img {
+        border-radius: 0%;
+    }
+    .recipe-card {
+        padding: 0px;
+    }
+    .recipe-card-responsive {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
